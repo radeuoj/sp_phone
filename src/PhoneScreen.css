@@ -1,0 +1,102 @@
+.phone-screen {
+  /* height: 544px; */ /*iphone 8*/
+  height: 663px; /*iphone 16*/
+  width: 306px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  color: white;
+
+  /* box-shadow: 0 0 0 1px black, rgb(57, 51, 77) 0px 0px 1.6px 4px, rgb(211, 205, 228) 0px 0; */
+  box-shadow: 0 0 0 5px black, 0 0 1.6px 7px rgb(57, 51, 77), 0px 0 0 7.3px rgb(211, 205, 228);
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+body {
+  background-color: black;
+}
+
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 34px 8px 34px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  z-index: 299;
+}
+
+.header div {
+  text-align: center;
+}
+
+.header .time {
+  width: 48px;
+}
+
+.header .right {
+  width: 48px;
+}
+
+.dynamic-island {
+  width: 86px;
+  height: 24px;
+  border-radius: 12px;
+  top: 8px;
+  background-color: black;
+  z-index: 300;
+
+  position: absolute;
+}
+
+.navspace {
+  /* background-color: brown; */
+
+  bottom: 0;
+
+  height: 30px;
+  width: 100%;
+
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+
+  z-index: 299;
+}
+
+.navspace .navbar {
+  position: absolute;
+
+  bottom: 6px;
+
+  width: 120px;
+  height: 5px;
+
+  border-radius: 3px;
+
+  background-color: white;
+
+  transition: bottom 0.3s;
+}
+
+.navspace:hover .navbar {
+  bottom: 12px;
+}
+
+.app-space {
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+
+

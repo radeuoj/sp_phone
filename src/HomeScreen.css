@@ -1,0 +1,33 @@
+.homescreen-container {
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+
+  position: relative;
+}
+
+.homescreen-container img {
+  position: absolute;
+}
+
+.homescreen-container .app-grid {
+  /* background-color: blue; */
+  margin: 66px 0 56px 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  position: absolute;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 8px;
+  /* grid-template-rows: auto auto auto auto auto; */
+  justify-content: space-around;
+  justify-items: center;
+  /* align-content: start; */
+}

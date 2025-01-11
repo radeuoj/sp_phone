@@ -1,0 +1,26 @@
+.app-icon-container {
+  /* background-color: rebeccapurple; */
+
+  width: 50px;
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding-bottom: 10px;
+}
+
+.app-icon-container .app-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 18px;
+  position: static;
+}
+
+.app-icon-container .app-name {
+  font-size: 14px;
+  text-align: center;
+} 
