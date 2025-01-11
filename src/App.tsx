@@ -1,10 +1,10 @@
-import PhoneScreen from "./PhoneScreen"
+import Phone from "./Phone.tsx"
 
 function App() {
 
   return (
     <>
-      <PhoneScreen />
+      <Phone />
     </>
   )
 }

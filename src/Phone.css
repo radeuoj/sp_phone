@@ -1,3 +1,18 @@
+.phone-frame {
+  position: absolute;
+
+  bottom: 50px;
+  right: 50px;
+
+  height: 663px; /*iphone 16*/
+  width: 306px;
+
+  /* box-shadow: 0 0 0 1px black, rgb(57, 51, 77) 0px 0px 1.6px 4px, rgb(211, 205, 228) 0px 0; */
+  box-shadow: 0 0 0 5px black, 0 0 1.6px 7px rgb(57, 51, 77), 0px 0 0 7.3px rgb(211, 205, 228);
+  border-radius: 40px;
+  overflow: hidden;
+}
+
 .phone-screen {
   /* height: 544px; */ /*iphone 8*/
   height: 663px; /*iphone 16*/
@@ -8,11 +23,6 @@
   align-items: center;
   position: relative;
   color: white;
-
-  /* box-shadow: 0 0 0 1px black, rgb(57, 51, 77) 0px 0px 1.6px 4px, rgb(211, 205, 228) 0px 0; */
-  box-shadow: 0 0 0 5px black, 0 0 1.6px 7px rgb(57, 51, 77), 0px 0 0 7.3px rgb(211, 205, 228);
-  border-radius: 40px;
-  overflow: hidden;
 }
 
 body {
@@ -70,6 +80,8 @@ body {
   justify-content: center;
 
   z-index: 299;
+
+  cursor: pointer;
 }
 
 .navspace .navbar {

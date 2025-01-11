@@ -18,6 +18,8 @@
   object-fit: cover;
   border-radius: 18px;
   position: static;
+
+  cursor: pointer;
 }
 
 .app-icon-container .app-name {
