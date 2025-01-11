@@ -1,8 +1,9 @@
+import "./Wassup.css";
 
 function Wassup() {
 
   return (
-    <div>
+    <div className="wassup-app">
       hey wassup
     </div>
   );

@@ -7,7 +7,7 @@ import WassupIcon from "../assets/wassup.png";
 export interface App {
   name: string,
   icon: string,
-  component: FC,
+  component: FC | null,
   hidden: boolean,
 }
 
