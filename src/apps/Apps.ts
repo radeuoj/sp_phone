@@ -7,7 +7,7 @@ import { FC } from "react";
 export interface App {
   name: string,
   icon: string,
-  component: FC,
+  component: JSX.Element,
   hidden: boolean,
 }
 
@@ -34,4 +34,9 @@ export let APPS: App[] = [
 export function resetAPPS() {
   console.log("resetat")
   APPS = [];
+}
+
+export function setupAPPS(apps: App[]) {
+  APPS = apps;
+  console.log(APPS);
 }
