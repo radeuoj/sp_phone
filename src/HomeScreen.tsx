@@ -1,12 +1,19 @@
 import "./HomeScreen.css";
 import wallpaper from "./assets/wallpaper.jpg";
 import AppIcon from "./AppIcon";
-import { App, APPS } from "./apps/Apps";
+import { App, APPS, resetAPPS } from "./apps/Apps.ts";
+import Phone from "./apps/Phone.tsx";
+import PhoneIcon from "./assets/phone.png";
+import WassupIcon from "./assets/wassup.png";
+import Wassup from "./apps/Wassup.tsx";
+import YourApps from "./apps/YourApps.tsx";
 
 interface Props {
   currentApp: App | null,
   setCurrentApp: React.Dispatch<React.SetStateAction<App | null>>,
 }
+
+setupApps();
 
 function HomeScreen({currentApp, setCurrentApp}: Props) {
 
@@ -28,6 +35,31 @@ function HomeScreen({currentApp, setCurrentApp}: Props) {
       </div>
     </div>
   );
+}
+
+function setupApps() {
+  resetAPPS();
+
+  APPS.push({
+    name: "Phone",
+    icon: PhoneIcon,
+    component: Phone,
+    hidden: false,
+  });
+    
+  APPS.push({
+    name: "Wassup",
+    icon: WassupIcon,
+    component: Wassup,
+    hidden: false,
+  });
+
+  APPS.push({
+    name: "Your apps",
+    icon: "",
+    component: YourApps,
+    hidden: false
+  });
 }
 
 export default HomeScreen;

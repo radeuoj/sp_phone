@@ -1,20 +1,14 @@
 import "./AppIcon.css";
-import { App } from "./apps/Apps";
-import BackgroundIcon from "./assets/wallpaper.jpg";
+import { App } from "./apps/Apps.ts";
 
 interface Props {
   key?: string,
-  app?: App,
+  app: App,
   currentApp: App | null,
   setCurrentApp: React.Dispatch<React.SetStateAction<App | null>>,
 }
 
-function AppIcon({currentApp, setCurrentApp, app = {
-  name: "Your app",
-  icon: BackgroundIcon,
-  component: null,
-  hidden: false,
-}}: Props) {
+export default function AppIcon({currentApp, setCurrentApp, app}: Props) {
 
   function iconClickHandler() {
     setCurrentApp(app)
@@ -28,5 +22,3 @@ function AppIcon({currentApp, setCurrentApp, app = {
     </div>
   );
 }
-
-export default AppIcon;
